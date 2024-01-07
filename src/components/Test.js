@@ -74,7 +74,7 @@ function Show () {
       </div>
   
       <div className="svg-container">
-        <svg viewBox="0 0 984 864" fill="none" preserveAspectRatio="xMidYMax meet">
+        <svg viewBox="0 25 984 864" fill="none" preserveAspectRatio="xMidYMax meet">
           <motion.path
             d={dimentions}
             stroke="#808080"

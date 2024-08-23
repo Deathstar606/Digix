@@ -24,8 +24,10 @@ class Main extends Component {
         <HeroSec/>
         <Show/>
         <Service/>
-        <Icon/>
 {/*         <Show/>
+        
+        <Icon/>
+        <Show/>
         <Service/>
         <Icon/> */}
       </>

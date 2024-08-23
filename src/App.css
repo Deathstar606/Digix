@@ -1,4 +1,8 @@
 /*Starts Here*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .logo {
   width: 90px; /* You can adjust the percentage as needed */
   height: 37px; /* This maintains the image's aspect ratio */
@@ -8,23 +12,70 @@
   margin-left: auto;
 }
 
+.nav-c {
+  background-color: transparent;
+  position: fixed;
+  width: 95%;
+  z-index: 9999;
+}
+
+.nav-ele {
+  padding: 6px 20px 0px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  transition: all ease smooth 0.3s;
+}
+
+.nav-ele:hover {
+  border-bottom: 2px solid rgb(255, 94, 0);
+  .nav-sub {
+    opacity: 1;
+    z-index: 99;
+    margin-top: 6px;
+  }
+}
+
+.nav-sub {
+  position: absolute;
+  border-radius: 10px;
+  margin-top: -50px;
+  margin-left: -20px;
+  width: 120px;
+  padding: 10px 0px 10px 0px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 25px #c4c4c4;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+}
+
+@media (min-width: 1368px) {
+  .lg-container {
+    max-width: 85%;
+  }
+  .nav-container {
+    max-width: 88.5%;
+  }
+}
+
 .svg-container {
   position: relative;
   display: center;
-  resize: both;
-  width: 90%;
-  left: 7.2%;
-  height: 120vh;
-  padding-bottom: 56.25%;
+  resize: horizontal;
+  width: 100%;
+  height: 100%;
   vertical-align: top;
   overflow: hidden;
   z-index: -1;
 }
+
 .svg-container svg {
 position: relative;
-top: 0;
+top: 20;
 left: 8.5%;
-width: 80%;
+width: 85%;
 height: auto;
 }
 
@@ -67,24 +118,6 @@ height: auto;
   background-color: #353839;
   margin:0px auto;
   color: #F1593A;
-}
-
-.nav-color {
-  position: fixed;
-  background-color:#353839;
-  width: 100%;
-  height: 4rem;
-  z-index: 9999;
-}
-
-.nav-c {
-  position: fixed;
-  width: 95%;
-  z-index: 9999;
-}
-
-.sc {
-  height: 40vh;
 }
 
 .section-hero-data {

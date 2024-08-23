@@ -77,9 +77,9 @@ function Show () {
         <svg viewBox="-5 0 1620 1200" fill="none" preserveAspectRatio="xMidYMax meet">
           <motion.path
             d={dimentions}
-            stroke="#fff2d7"
+            stroke="#d4d4d4"
             strokeWidth="10"
-            opacity={0.8}
+            opacity={0.6}
             strokeDasharray={pathLength}
             style={{ strokeDashoffset: pathOffset }}
         />

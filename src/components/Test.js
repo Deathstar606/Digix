@@ -53,40 +53,38 @@ function People() {
     )
 } */
 
-function Show () {
-    const { scrollYProgress } = useScroll();
-    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", dimentions);
-  
-    const pathLength = path.getTotalLength();
-  
-    const pathOffset = useTransform(
-      scrollYProgress,
-      [1, 0.4],
-      [1, pathLength]
-    );
-  
-    return (
-      <>
-      <div className="about-pos">
-        <AboutUs/>
-        {/* <People/> */}
-      </div>
-  
-      <div className="svg-container">
-        <svg viewBox="-5 0 1620 1200" fill="none" preserveAspectRatio="xMidYMax meet">
-          <motion.path
-            d={dimentions}
-            stroke="#d4d4d4"
-            strokeWidth="10"
-            opacity={0.6}
-            strokeDasharray={pathLength}
-            style={{ strokeDashoffset: pathOffset }}
-        />
-        </svg>
-      </div>
-      </>
-    );
-}
+    function Show() {
+        const { scrollYProgress } = useScroll();
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", dimentions);
+    
+        const pathLength = path.getTotalLength();
+    
+        const pathOffset = useTransform(
+          scrollYProgress,
+          [1, 0.4],
+          [1, pathLength]
+        );
+    
+        return (
+          <div className="show-container">
+            <div className="svg-container">
+              <svg viewBox="-5 0 1620 1200" fill="none" preserveAspectRatio="xMidYMax meet">
+                <motion.path
+                  d={dimentions}
+                  stroke="#d4d4d4"
+                  strokeWidth="10"
+                  opacity={0.6}
+                  strokeDasharray={pathLength}
+                  style={{ strokeDashoffset: pathOffset }}
+                />
+              </svg>
+            </div>
+            <div className="about-pos">
+              <AboutUs />
+            </div>
+          </div>
+        );
+    }    
 
 export default Show

@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Digix/static/css/main.0d6f2a93.css",
-    "main.js": "/Digix/static/js/main.d84fa97e.js",
+    "main.css": "/Digix/static/css/main.af583907.css",
+    "main.js": "/Digix/static/js/main.adc0dca8.js",
     "static/js/787.7815d080.chunk.js": "/Digix/static/js/787.7815d080.chunk.js",
+    "static/media/demo.mp4": "/Digix/static/media/demo.a5136bb9b306c8fd2b44.mp4",
     "static/media/noyon.png": "/Digix/static/media/noyon.b409c964acf0523f5705.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Digix/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/demo.jpg": "/Digix/static/media/demo.eeb3fa93e4ac26be82eb.jpg",
@@ -15,12 +16,12 @@
     "static/media/whatssapp.png": "/Digix/static/media/whatssapp.3f42767710fa54f441b0.png",
     "static/media/Digixwhitelogo.png": "/Digix/static/media/Digixwhitelogo.90a0a511e3b9d5eb9047.png",
     "index.html": "/Digix/index.html",
-    "main.0d6f2a93.css.map": "/Digix/static/css/main.0d6f2a93.css.map",
-    "main.d84fa97e.js.map": "/Digix/static/js/main.d84fa97e.js.map",
+    "main.af583907.css.map": "/Digix/static/css/main.af583907.css.map",
+    "main.adc0dca8.js.map": "/Digix/static/js/main.adc0dca8.js.map",
     "787.7815d080.chunk.js.map": "/Digix/static/js/787.7815d080.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d6f2a93.css",
-    "static/js/main.d84fa97e.js"
+    "static/css/main.af583907.css",
+    "static/js/main.adc0dca8.js"
   ]
 }

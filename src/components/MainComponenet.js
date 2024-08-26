@@ -2,6 +2,7 @@ import React from 'react';
 import Example from './Navbar';
 import HeroSec from './HeroSec';
 import Show from './Test';
+import Leaders from './LeaderShip';
 import Service from './Services';
 import ShowBrand from './Brands';
 import Footer from './Footer';
@@ -13,6 +14,7 @@ const Main = () => {
       <Example />
       <HeroSec />
       <Show />
+      <Leaders />
       <Service />
       <ShowBrand/>
       <Footer/>

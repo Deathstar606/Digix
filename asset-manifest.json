@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Digix/static/css/main.af583907.css",
-    "main.js": "/Digix/static/js/main.adc0dca8.js",
+    "main.css": "/Digix/static/css/main.b3316d8d.css",
+    "main.js": "/Digix/static/js/main.92b2f95b.js",
     "static/js/787.7815d080.chunk.js": "/Digix/static/js/787.7815d080.chunk.js",
     "static/media/demo.mp4": "/Digix/static/media/demo.a5136bb9b306c8fd2b44.mp4",
-    "static/media/noyon.png": "/Digix/static/media/noyon.b409c964acf0523f5705.png",
+    "static/media/head-chef.jpg": "/Digix/static/media/head-chef.8e4a0af9a43f215673c4.jpg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Digix/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/demo.jpg": "/Digix/static/media/demo.eeb3fa93e4ac26be82eb.jpg",
-    "static/media/fardin.png": "/Digix/static/media/fardin.eed906bff26edbb87f3c.png",
     "static/media/fontawesome-webfont.eot": "/Digix/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Digix/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/Digix/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/arrow.gif": "/Digix/static/media/arrow.a4fc9165dd79885962de.gif",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Digix/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/whatssapp.png": "/Digix/static/media/whatssapp.3f42767710fa54f441b0.png",
+    "static/media/asst-chef.jpg": "/Digix/static/media/asst-chef.452fd3bfaa0744f5bbbe.jpg",
+    "static/media/manager.jpg": "/Digix/static/media/manager.5dab4326fac97111d7c1.jpg",
     "static/media/Digixwhitelogo.png": "/Digix/static/media/Digixwhitelogo.90a0a511e3b9d5eb9047.png",
     "index.html": "/Digix/index.html",
-    "main.af583907.css.map": "/Digix/static/css/main.af583907.css.map",
-    "main.adc0dca8.js.map": "/Digix/static/js/main.adc0dca8.js.map",
+    "main.b3316d8d.css.map": "/Digix/static/css/main.b3316d8d.css.map",
+    "main.92b2f95b.js.map": "/Digix/static/js/main.92b2f95b.js.map",
     "787.7815d080.chunk.js.map": "/Digix/static/js/787.7815d080.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af583907.css",
-    "static/js/main.adc0dca8.js"
+    "static/css/main.b3316d8d.css",
+    "static/js/main.92b2f95b.js"
   ]
 }

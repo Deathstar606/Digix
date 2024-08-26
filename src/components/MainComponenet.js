@@ -1,37 +1,29 @@
-import React, { Component } from 'react';
-//import Para from './ParaView';
-//import LineAnimation from './About';
+import React from 'react';
 import Example from './Navbar';
 import HeroSec from './HeroSec';
 import Show from './Test';
-import AboutUs from './AboutUs';
-import People from './Team';
-import Service from './Services'
-import Icon from './Contact';
-import Typewriter from './TextAnimate';
+import Service from './Services';
+import ShowBrand from './Brands';
+import Footer from './Footer';
+//import Leaders from './LeaderShip';
 
-class Main extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-  render() {
-  
+const Main = () => {
   return (
-      <>
-        <Example/>
-        <HeroSec/>
-        <Show/>
-        <Service/>
-{/*         <Show/>
-        
-        <Icon/>
-        <Show/>
-        <Service/>
-        <Icon/> */}
-      </>
+    <>
+      <Example />
+      <HeroSec />
+      <Show />
+      <Service />
+      <ShowBrand/>
+      <Footer/>
+      {/* <Leaders /> */}
+      {/* Uncomment the lines below if needed */}
+      {/* <Show /> */}
+      {/* <Icon /> */}
+      {/* <Service /> */}
+      {/* <Icon /> */}
+    </>
   );
-}
-} //selected dish is dick
+};
+
 export default Main;

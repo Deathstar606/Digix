@@ -31,13 +31,14 @@ const Service = () => {
   return (
     <>
     <div className="d-flex justify-content-center">
-      <h2 className="mb-1 mt-5 mb-5"><StaggeredText text="Our Services"/></h2>
+      <h2 className="mt-5 mb-5"><StaggeredText text="Our Services"/></h2>
     </div>
     <Container style={{minWidth: "85%"}}>
-      <Row className="mt-3">
+      <Row className="mt-4">
         <Col md={3} xs={6}>
           <div>
             <motion.svg
+              style={{scale: "0.8"}}
               ref={ref} // Pass the ref to the motion.svg component
               viewBox="-12 -5 603 441" 
               fill="none" 
@@ -69,11 +70,13 @@ const Service = () => {
               />
             </motion.svg>
             <h4 className="text-center mt-3">Video Editing</h4>
+            <p className="text-center mt-3">Video editing involves cutting, arranging, and enhancing video footage to create a cohesive and polished final product.</p>
           </div>
         </Col>
         <Col md={3} xs={6}>
           <div>
             <motion.svg
+              style={{scale: "0.8"}}
               ref={ref} // Pass the ref to the motion.svg component
               viewBox="-12 -5 603 441" 
               fill="none" 
@@ -105,11 +108,13 @@ const Service = () => {
               />
             </motion.svg>
             <h4 className="text-center mt-3">Video Editing</h4>
+            <p className="text-center mt-3">Video editing involves cutting, arranging, and enhancing video footage to create a cohesive and polished final product.</p>
           </div>
         </Col>
         <Col md={3} xs={6}>
           <div>
             <motion.svg
+              style={{scale: "0.8"}}
               ref={ref} // Pass the ref to the motion.svg component
               viewBox="-12 -5 603 441" 
               fill="none" 
@@ -141,11 +146,13 @@ const Service = () => {
               />
             </motion.svg>
             <h4 className="text-center mt-3">Video Editing</h4>
+            <p className="text-center mt-3">Video editing involves cutting, arranging, and enhancing video footage to create a cohesive and polished final product.</p>
           </div>
         </Col>
         <Col md={3} xs={6}>
           <div>
             <motion.svg
+              style={{scale: "0.8"}}
               ref={ref} // Pass the ref to the motion.svg component
               viewBox="-12 -5 603 441" 
               fill="none" 
@@ -177,6 +184,7 @@ const Service = () => {
               />
             </motion.svg>
             <h4 className="text-center mt-3">Video Editing</h4>
+            <p className="text-center mt-3">Video editing involves cutting, arranging, and enhancing video footage to create a cohesive and polished final product.</p>
           </div>
         </Col>
       </Row>

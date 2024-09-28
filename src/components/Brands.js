@@ -6,6 +6,7 @@ import gal1 from "../images/Brand Images/icons8-google-100.png"
 import gal2 from "../images/Brand Images/icons8-kfc-chicken-100.png"
 import gal3 from "../images/Brand Images/icons8-microsoft-50.png"
 import gal4 from "../images/Brand Images/icons8-nissan-titan-96.png"
+import gal5 from "../images/Brand Images/Strategy-&-Insights.png"
 import "../components/Brands.css"
 
 function Brands() {
@@ -32,12 +33,14 @@ function Brands() {
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal2}/>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal3}/>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal4}/>
+                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal5}/>
                 </div>
                 <div className="d-flex logos-slide" style={{position: "relative"}}>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal1}/>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal2}/>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal3}/>
                     <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal4}/>
+                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal5}/>
                 </div>
             </div>
         </Col>

@@ -27,7 +27,7 @@
 
 .centered-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -44,11 +44,17 @@
   justify-content: flex-end;
 }
 
+@media (max-width: 640px) {
+  .scroll-container {
+    right: 0;
+    left: 0;
+    top: -100;
+    justify-content: center;
+  }
+}
+
 .scroll-container h4 {
-  margin: 0;
+  margin-left: 50px;
   color: #f1593a; /* Optional: set text color */
 }
 
-.scroll-container img {
-  margin-left: 10px; /* Space between text and image */
-}

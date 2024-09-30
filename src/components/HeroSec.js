@@ -21,15 +21,15 @@ const HeroSec = () => {
 
     return(
         <VideoBackground videoSource={dem}>
-            <h1>Insperation Text</h1> 
-            <p>
+            <h1 style={{fontSize: "clamp(44px, 4vw, 70px)"}}>Insperation Text</h1> 
+            <p style={{fontSize: "clamp(14px, 1vw, 36px)", marginTop: "10px"}}>
               Strategic marketing plans.
               Creative designs. Stunning
               videos
             </p>
             <div className="scroll-container">
               <h4>Scroll</h4>
-              <img style={{ height: 50, width: 50 }} src={arrow} />
+              <img style={{ height: 50, width: 50, marginLeft: "10px" }} src={arrow} />
             </div>
         </VideoBackground>
     );

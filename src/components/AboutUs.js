@@ -35,18 +35,18 @@ const AboutUs = () => {
                             </div>
                         </Col>
                         <Col md={5} className="px-0">
-                            <CardImg style={{minHeight: "100%", backgroundAttachment: "fixed"}} src={demo}/>
+                            <CardImg style={{minHeight: "100%"}} src={demo}/>
                         </Col>
                     </Row>
                     <Row className="m-0 g-0">
                         <Col md={7} className="px-0">
                             <div style={{minHeight: "100%",       
                                             backgroundImage: `url(${demo})`, 
-                                            backgroundSize: 'contain', 
+                                            backgroundSize: 'fill', 
                                             backgroundRepeat: 'no-repeat',
                                             backgroundAttachment: "fixed",}}/>
                         </Col>
-                        <Col md={5} className="px-0" style={{paddingTop: "5%", paddingBottom: "5%"}}>
+                        <Col md={5} className="px-0" style={{marginTop: "5%", marginBottom: "5%"}}>
                             <div className="pr-5 ml-5">
                                 <h2 className="m-4" style={{color: "#f1593a"}}><StaggeredText text="Our Vision"/></h2>
                                 <p className="ml-4">

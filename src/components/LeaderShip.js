@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import { CardImg, Row, Col, Container } from 'reactstrap';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+import { Scrollbar, Autoplay } from 'swiper/modules';
+
 import img1 from "../images/Leaders/asst-chef.jpg";
 import img2 from "../images/Leaders/head-chef.jpg";
 import img3 from "../images/Leaders/manager.jpg";
+import MediaQuery from 'react-responsive';
 
-function RenderLeader({ leader }) {
-  const [modal, setModal] = useState(false);
-
-  const handleShow = () => setModal(true);
-  const handleHide = () => setModal(false);
+function RenderLeader({ leader, handleShow }) {
 
   return (
     <>
-      <Col md={3}>
+      <div style={{height: "90%", paddingBottom: "50px"}}>
         <div style={{ overflow: "hidden" }}>
             <motion.div
-                onClick={handleShow}
+                onClick={() => handleShow(leader)} // Pass the leader as a parameter
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
                 style={{ cursor: 'pointer', position: 'relative' }}
@@ -32,41 +35,49 @@ function RenderLeader({ leader }) {
                 {leader.designation}
             </p>
         </div>
-      </Col>
-      <AnimatePresence>
-        {modal && (
-          <motion.div
-            className='modal-back'
-            onClick={handleHide}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              className='d-flex justify-content-center'
-              style={{ marginTop: "10vh" }}
-              initial={{ opacity: 0, scale: 0.2 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.2 }}
-            >
-              <Container style={{ position: "absolute" }}>
-                <Row className="justify-content-center ml-1 mr-1">
-                  <Col md={5} className="p-4">
-                    <h2 className="text-center mb-4 text-white">{leader.name}</h2>
-                    <p className="text-center mb-4 text-white">{leader.designation}</p>
-                    <h5 className="text-center mb-4 text-white">{leader.description}</h5>
-                  </Col>
-                </Row>
-              </Container>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      </div>
+    </>
+  );
+}
+
+function ShowDescription ({ desp, handleHide }) {  // Fix props destructuring
+  return (
+    <>
+      <motion.div
+        className='modal-back'
+        onClick={handleHide}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <motion.div
+          className='d-flex justify-content-center'
+          style={{ marginTop: "10vh" }}
+          initial={{ opacity: 0, scale: 0.2 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.2 }}
+        >
+          <Container style={{ position: "absolute" }}>
+            <Row className="justify-content-center ml-1 mr-1">
+              <Col md={5} className="p-4">
+                <h2 className="text-center mb-4 text-white">{desp.name}</h2>
+                <p className="text-center mb-4 text-white">{desp.designation}</p>
+                <h5 className="text-center mb-4 text-white">{desp.description}</h5>
+              </Col>
+            </Row>
+          </Container>
+        </motion.div>
+      </motion.div>
     </>
   );
 }
 
 function Leaders() {
+  const [modal, setModal] = useState(null);  // Store the selected leader here
+
+  const handleShow = (leader) => setModal(leader);  // Pass the leader object
+  const handleHide = () => setModal(null);  // Reset modal state to null
+
   const leaders = [
     {
       name: "Assistant Chef",
@@ -79,6 +90,18 @@ function Leaders() {
       designation: "Head Chef",
       description: "Leads the kitchen team and oversees all culinary operations.",
       image: img2
+    },
+    {
+      name: "Manager",
+      designation: "Manager",
+      description: "Ensures smooth operation of the restaurant and manages staff.",
+      image: img3
+    },
+    {
+      name: "Manager",
+      designation: "Manager",
+      description: "Ensures smooth operation of the restaurant and manages staff.",
+      image: img3
     },
     {
       name: "Manager",
@@ -104,14 +127,56 @@ function Leaders() {
               viewport={{ once: true }}
             >
               <Row className='outer-Img'>
-                {leaders.map((leader, index) => (
-                  <RenderLeader key={index} leader={leader} />
-                ))}
+                <MediaQuery minWidth={1279}>
+                  <Swiper
+                    scrollbar={{
+                    hide: true,
+                    }}
+                    modules={[Scrollbar]}
+                    spaceBetween={20}
+                    slidesPerView={4}
+                    className="mySwiper"
+                  >
+                    {leaders.map((leader, index) => (
+                      <SwiperSlide key={index}>
+                        <RenderLeader leader={leader} handleShow={handleShow} />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </MediaQuery>
+                <MediaQuery maxWidth={640}>
+                  <Swiper
+                    scrollbar={{
+                    hide: false,
+                    }}
+                    autoplay={{
+                      delay: 3000, // Adjust delay time (in milliseconds) as needed
+                      disableOnInteraction: false, // Optional: keeps autoplay running after interactions like swiping
+                    }}
+                    modules={[Scrollbar, Autoplay]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    className="mySwiper"
+                  >
+                    {leaders.map((leader, index) => (
+                      <SwiperSlide key={index}>
+                        <RenderLeader leader={leader} handleShow={handleShow} />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </MediaQuery>
               </Row>
             </motion.div>
           </Container>
         </div>
       </div>
+
+      {/* Modal for showing leader description */}
+      <AnimatePresence>
+        {modal && (
+          <ShowDescription desp={modal} handleHide={handleHide} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

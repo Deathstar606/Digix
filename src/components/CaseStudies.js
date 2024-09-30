@@ -3,9 +3,9 @@ import { Container, Row, Col, CardImg } from "reactstrap";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const CaseCard = ({ca}) => {
+const CaseCard = ({ ca }) => {
     return (
-        <Col md={6} className="py-2">
+        <Col md={ca.id === 3 ? 12 : 6} className="py-2">
             <motion.div 
                 className="catcard"
                 initial={{ y: 50, opacity: 0 }}

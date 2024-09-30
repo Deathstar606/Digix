@@ -76,6 +76,13 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 1366px) {
+  .svg-container {
+    width: 86%;
+    height: 94%; /* Ensures it covers the height of the AboutUs component */
+  }
+}
+
 .svg-container svg {
   width: 100%;
   height: 100%;

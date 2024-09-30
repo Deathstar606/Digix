@@ -38,7 +38,12 @@ const Home = (ct) => {
 
 const CaseId = (props) => {
   const { Id } = useParams();
-  const deats = props.cases.case.find(c => c.id === Number(Id)) ?? null; // Convert Id to a number
+  const deats = props.cases.case.find(c => c.id === Number(Id)) ?? null; 
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <CaseDeats
       case={deats}

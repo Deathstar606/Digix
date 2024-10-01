@@ -35,7 +35,7 @@ function Case (casefile) {
 
     if (casefile) {
         return (
-            <Container className="pb-5" style={{minWidth: "95%"}}>
+            <Container id="casestu" className="pb-5" style={{minWidth: "95%"}}>
                 <h1 className='pt-4 mt-4 pb-1 mb-1 row-header text-center' style={{fontSize: "clamp(54px, 4vw, 100px)", color: "#F1593A"}}>Case Studies</h1>
                 <h5 className='pb-3 text-center' style={{color: "#F1593A"}}>Our Creations</h5>
                 <Row className="mt-5 justify-content-center text-center">

@@ -43,7 +43,7 @@ const Service = () => {
 
   return (
     <>
-    <div className="d-flex justify-content-center">
+    <div id="services" className="d-flex justify-content-center">
       <h2 className="mt-3 mb-3"><StaggeredText text="Our Services"/></h2>
     </div>
     <Container style={{minWidth: "85%"}}>

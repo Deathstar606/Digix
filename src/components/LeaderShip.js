@@ -16,7 +16,7 @@ function RenderLeader({ leader, handleShow }) {
 
   return (
     <>
-      <div style={{height: "90%", paddingBottom: "50px"}}>
+      <div id="aboutus" style={{height: "90%", paddingBottom: "50px"}}>
         <div style={{ overflow: "hidden" }}>
             <motion.div
                 onClick={() => handleShow(leader)} // Pass the leader as a parameter

@@ -37,30 +37,30 @@ function Footer() {
     >
       <Container style={{ maxWidth: "85%", position: "relative", zIndex: 2, overflow: "hidden" }}>
         <Row style={{height: "100%"}}>
-          <Col md={3} xs={12} className="d-flex align-items-center">
-            <ul style={{ listStyleType: 'none', fontSize: '24px', display: 'flex', paddingBottom: "10%" }}>
-              <li className='mb-4' style={{ marginRight: '20px' }}>
-                <FaFacebook color="#f1593a"/>
-              </li>
-              <li className='mb-4' style={{ marginRight: '20px' }}>
-                <FaInstagram color="#f1593a"/>
-              </li>
-              <li className='mb-4'>
-                <FaTwitter color="#f1593a"/>
-              </li>
-            </ul>
-          </Col>
-            <Col md={4} xs={12} className="d-flex align-items-center">
-                <div style={{ paddingTop: "15%" }}>
-                    <div style={{ marginBottom: "20px" }}>
-                    <h5 style={{ fontWeight: "bold", marginBottom: "10px" }}>PHONE NUMBER</h5>
-                    <p style={{ margin: 0 }}>+88 019 3913 3033</p>
-                    </div>
-                    <div>
-                    <h5 style={{ fontWeight: "bold", marginBottom: "10px" }}>LOCATION</h5>
-                    <p style={{ margin: 0 }}>Road no 1, Nirala.<br/>Khulna</p>
-                    </div>
+            <Col md={3} xs={12} className="d-flex align-items-center justify-content-center mt-3">
+                <FaFacebook className='m-3' size={40} color="#f1593a"/>
+                <FaInstagram className='m-3' size={40} color="#f1593a"/>
+                <FaTwitter className='m-3' size={40} color="#f1593a"/>
+            </Col>
+            <Col md={4} xs={12} className="d-flex align-items-center justify-content-center">
+            <div style={{ paddingTop: "15%", paddingBottom: "15%" }}>
+                <div style={{ marginBottom: "20px" }}>
+                    <h5 className='text-center' style={{ fontWeight: "bold", marginBottom: "10px" }}>PHONE NUMBER</h5>
+                    <p className='text-center' style={{ margin: 0 }}>
+                        <a href="tel:+8801939133033" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            +88 019 3913 3033
+                        </a>
+                    </p>
                 </div>
+                <div>
+                    <h5 className='text-center' style={{ fontWeight: "bold", marginBottom: "10px" }}>LOCATION</h5>
+                    <p className='text-center' style={{ margin: 0 }}>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Road+no+1+Nirala+Khulna" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            Road no 1, Nirala.<br/>Khulna
+                        </a>
+                    </p>
+                </div>
+            </div>
             </Col>
             <Col md={5}>
               <motion.div

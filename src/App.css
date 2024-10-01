@@ -79,7 +79,7 @@ body {
 @media (max-width: 1366px) {
   .svg-container {
     width: 86%;
-    height: 94%; /* Ensures it covers the height of the AboutUs component */
+    height: 100%; /* Ensures it covers the height of the AboutUs component */
   }
 }
 

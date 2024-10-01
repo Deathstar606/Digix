@@ -12,7 +12,7 @@ import "../components/Brands.css"
 function Brands() {
   
     return (
-      <Row className='pt-5 pb-5'>
+      <Row className='pt-5 pb-5 mb-5'>
         <Col md={4}>
             <motion.div
                 className="pb-5"
@@ -21,8 +21,8 @@ function Brands() {
                 transition={{duration: 1, type: "tween", ease: "easeIn"}}
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{ once: true }}>
-                <div style={{marginLeft: "10vw"}}>
-                    <h1 className="m-5 text-white"><StaggeredText text="Recognation"/></h1>
+                <div>
+                    <h1 className="m-5 text-white text-center"><StaggeredText text="Recognation"/></h1>
                 </div>
             </motion.div>
         </Col>

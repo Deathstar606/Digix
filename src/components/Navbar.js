@@ -14,7 +14,7 @@ import logo from "../images/Digixwhitelogo.png";
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-scroll';
 
-export const Burger = (handleOrdPage) => {
+export const Burger = ({handleOrdPage, linkClick}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export const Burger = (handleOrdPage) => {
 
   return (
     <motion.div
-      onClick={handleOrdPage.showMod}
+      onClick={handleOrdPage}
       className='modal-back'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -59,9 +59,45 @@ export const Burger = (handleOrdPage) => {
           padding: '0 1rem', // Add padding for aesthetics
         }}>
           <ul className='p-3' style={{ padding: 0, listStyleType: 'none', marginTop: "10%" }}>
-            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>Case Studies</li>
-            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>Learn</li>
-            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>About Us</li>
+            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>
+              <Link
+                style={{ color: "black", fontSize: "18px", fontWeight: "500" }}
+                to="aboutus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => linkClick('aboutus')}
+              >
+                  About Us
+              </Link>
+            </li>
+            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>
+              <Link
+                style={{ color: "black", fontSize: "18px", fontWeight: "500" }}
+                to="casestu"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => linkClick('casestu')}
+              >
+                  Case Studies
+              </Link>
+            </li>
+            <li style={{marginTop: "5px", marginBottom: "5px", fontSize: "18px"}}>
+              <Link
+                style={{ color: "black", fontSize: "18px", fontWeight: "500" }}
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => linkClick('services')}
+              >
+                  Servies
+              </Link>
+            </li>
           </ul>
         </div>
       </motion.div>
@@ -75,13 +111,14 @@ const Navbar = () => {
   const location = useLocation();
   const [scrollTarget, setScrollTarget] = useState(null);
 
-  const handleClick = (targetId) => {
+  function handleClick (targetId) {
     if (location.pathname !== "/home") {
       setScrollTarget(targetId); // Set the target for scrolling
       navigate("/home"); // Redirect to /home
     } else {
       setScrollTarget(targetId); // Set target for the current page
     }
+    setisOpen(false)
   };
 
   useEffect(() => {
@@ -120,7 +157,7 @@ const Navbar = () => {
             </div>
             <AnimatePresence mode='wait'>
               {isOpen && (
-                <Burger showMod={burgerToggle} />
+                <Burger handleOrdPage={burgerToggle} linkClick={handleClick}/>
               )}
             </AnimatePresence>
         </MediaQuery>
@@ -134,7 +171,7 @@ const Navbar = () => {
                   to="aboutus"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-250}
                   duration={500}
                   onClick={() => handleClick('aboutus')}
                 >

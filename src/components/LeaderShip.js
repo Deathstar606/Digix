@@ -4,12 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-
+import { Leaders as Lead } from '../data/leaders';
 import { Scrollbar, Autoplay } from 'swiper/modules';
-
-import img1 from "../images/Leaders/asst-chef.jpg";
-import img2 from "../images/Leaders/head-chef.jpg";
-import img3 from "../images/Leaders/manager.jpg";
 import MediaQuery from 'react-responsive';
 
 function RenderLeader({ leader, handleShow }) {
@@ -78,39 +74,6 @@ function Leaders() {
   const handleShow = (leader) => setModal(leader);  // Pass the leader object
   const handleHide = () => setModal(null);  // Reset modal state to null
 
-  const leaders = [
-    {
-      name: "Assistant Chef",
-      designation: "Assistant Chef",
-      description: "Responsible for assisting the head chef in daily kitchen operations.",
-      image: img1
-    },
-    {
-      name: "Head Chef",
-      designation: "Head Chef",
-      description: "Leads the kitchen team and oversees all culinary operations.",
-      image: img2
-    },
-    {
-      name: "Manager",
-      designation: "Manager",
-      description: "Ensures smooth operation of the restaurant and manages staff.",
-      image: img3
-    },
-    {
-      name: "Manager",
-      designation: "Manager",
-      description: "Ensures smooth operation of the restaurant and manages staff.",
-      image: img3
-    },
-    {
-      name: "Manager",
-      designation: "Manager",
-      description: "Ensures smooth operation of the restaurant and manages staff.",
-      image: img3
-    }
-  ];
-
   return (
     <div className='leader-container'>
       <div className='leader-Img'>
@@ -137,7 +100,7 @@ function Leaders() {
                     slidesPerView={4}
                     className="mySwiper"
                   >
-                    {leaders.map((leader, index) => (
+                    {Lead.map((leader, index) => (
                       <SwiperSlide key={index}>
                         <RenderLeader leader={leader} handleShow={handleShow} />
                       </SwiperSlide>
@@ -158,7 +121,7 @@ function Leaders() {
                     slidesPerView={1}
                     className="mySwiper"
                   >
-                    {leaders.map((leader, index) => (
+                    {Lead.map((leader, index) => (
                       <SwiperSlide key={index}>
                         <RenderLeader leader={leader} handleShow={handleShow} />
                       </SwiperSlide>

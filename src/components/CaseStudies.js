@@ -16,7 +16,7 @@ const CaseCard = ({ ca }) => {
                     <div>
                         <CardImg className="catimg" src={ca.image} alt="case image" />
                         <div className="cat-body">
-                            <h4 style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px" }}>{ca.name}</h4>
+                            <h4 style={{ borderBottom: "1px solid #ccc", paddingBottom: "5px", color: "#F1593A" }}>{ca.name}</h4>
                         </div>
                     </div>
                 </Link>

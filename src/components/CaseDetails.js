@@ -33,9 +33,10 @@ function CaseDeats (props) {
                         </div>
                         <div 
                             className="text-center"
-                            style={{ padding: "100px", marginTop: "100vh", overflowY: 'auto', position: "relative", backgroundColor: "wheat" }}
+                            style={{ padding: "80px 150px", marginTop: "100vh", overflowY: 'auto', position: "relative", backgroundColor: "white" }}
                         >
-                            <h1>{props.case.description}</h1>
+                            <h1>{props.case.name}</h1>
+                            <p className="mt-4">{props.case.description}</p>
                         </div>
                     </div>
                 </MediaQuery>
@@ -65,10 +66,10 @@ function CaseDeats (props) {
                             </div>
                         </div>
                         <div 
-                            className="text-center"
-                            style={{ padding: "100px", marginTop: "100vh", overflowY: 'auto', position: "relative", backgroundColor: "wheat" }}
+                            style={{ padding: "80px 50px", marginTop: "100vh", overflowY: 'auto', position: "relative", backgroundColor: "white" }}
                         >
-                            <h1>{props.case.description}</h1>
+                            <h1 className="text-center">{props.case.name}</h1>
+                            <p className="mt-4 text-center">{props.case.description}</p>
                         </div>
                     </div>
                 </MediaQuery>

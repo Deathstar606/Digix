@@ -11,15 +11,17 @@ function Footer() {
   const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
-    console.log(email, message)
     e.preventDefault();
-    axios.post('http://localhost:9000/send-mail', { email, message })
+    axios.post('https://digi-back-blue.vercel.app/send-mail', { email, message })
       .then((response) => {
         alert('Email sent successfully!');
       })
       .catch((error) => {
+        console.error('Error:', error); // Added for debugging
         alert('Failed to send email.');
       });
+      setEmail("")
+      setMessage("")
   };
 
   return (
@@ -68,7 +70,7 @@ function Footer() {
                 transition={{ duration: 1, type: "tween", ease: "easeIn" }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}>
-                <h1 style={{ padding: "10% 0 10% 10%", backgroundColor: "rgba(241, 89, 58, 0.8)", color: "black" }}>
+                <h1 style={{ display: "flex", justifyContent: "center", padding: "10%", backgroundColor: "rgba(241, 89, 58, 0.8)", color: "black" }}>
                   Stay in touch
                 </h1>
               </motion.div>
@@ -110,12 +112,13 @@ function Footer() {
                   />
                 </Form.Group>
 
-                <div 
-                  className='butt'
-                  type="submit" 
-                  style={{justifyContent: "flex-end", float: "right" }}>
-                  Send
-                </div>
+                  <button 
+                    className='butt' 
+                    type="submit" 
+                    style={{ justifyContent: "flex-end", float: "right", color: "white" }}
+                  >
+                    Send
+                  </button>
               </Form>
             </Col>
         </Row>

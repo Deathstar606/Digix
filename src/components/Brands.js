@@ -6,7 +6,11 @@ import gal1 from "../images/Brand Images/icons8-google-100.png"
 import gal2 from "../images/Brand Images/icons8-kfc-chicken-100.png"
 import gal3 from "../images/Brand Images/icons8-microsoft-50.png"
 import gal4 from "../images/Brand Images/icons8-nissan-titan-96.png"
-import gal5 from "../images/Brand Images/Strategy-&-Insights.png"
+import gal5 from "../images/Brand Images/icons8-amazon-50.png"
+import gal6 from "../images/Brand Images/icons8-discord-50.png"
+import gal7 from "../images/Brand Images/icons8-nvidia-50.png"
+import gal8 from "../images/Brand Images/icons8-amd-50.png"
+import gal9 from "../images/Brand Images/icons8-ups-80.png"
 import "../components/Brands.css"
 
 function Brands() {
@@ -29,18 +33,26 @@ function Brands() {
         <Col md={8}>
             <div className='d-flex logos' style={{marginTop: '5%'}}>
                 <div className="d-flex logos-slide" style={{position: "relative"}}>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal1}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal2}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal3}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal4}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal5}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal1}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal2}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal3}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal4}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal5}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal6}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal7}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal8}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal9}/>
                 </div>
                 <div className="d-flex logos-slide" style={{position: "relative"}}>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal1}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal2}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal3}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal4}/>
-                    <CardImg style={{position: "relative", width: "100px", marginRight: "20px"}} src={gal5}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal1}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal2}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal3}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal4}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal5}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal6}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal7}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal8}/>
+                    <CardImg style={{position: "relative", width: "120px", marginRight: "20px"}} src={gal9}/>
                 </div>
             </div>
         </Col>

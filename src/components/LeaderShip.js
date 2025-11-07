@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-import { Leaders as Lead } from '../data/leaders';
 import { Scrollbar, Autoplay } from 'swiper/modules';
 import MediaQuery from 'react-responsive';
 
@@ -68,7 +67,8 @@ function ShowDescription ({ desp, handleHide }) {  // Fix props destructuring
   );
 }
 
-function Leaders() {
+function Leaders(people) {
+  console.log(people.leaders);
   const [modal, setModal] = useState(null);  // Store the selected leader here
 
   const handleShow = (leader) => setModal(leader);  // Pass the leader object
@@ -100,7 +100,7 @@ function Leaders() {
                     slidesPerView={4}
                     className="mySwiper"
                   >
-                    {Lead.map((leader, index) => (
+                    {people.leaders.map((leader, index) => (
                       <SwiperSlide key={index}>
                         <RenderLeader leader={leader} handleShow={handleShow} />
                       </SwiperSlide>
@@ -121,7 +121,7 @@ function Leaders() {
                     slidesPerView={1}
                     className="mySwiper"
                   >
-                    {Lead.map((leader, index) => (
+                    {people.leaders.map((leader, index) => (
                       <SwiperSlide key={index}>
                         <RenderLeader leader={leader} handleShow={handleShow} />
                       </SwiperSlide>

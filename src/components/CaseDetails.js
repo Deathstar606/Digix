@@ -2,7 +2,6 @@ import React from "react";
 import MediaQuery from "react-responsive";
 
 function CaseDeats (props) {
-
     if (props.case) {
         return (
             <>

@@ -286,7 +286,7 @@ const CaseStudyForm = ({
       setUploadProgress,
       setIsUploading
     );
-    console.log("Uploaded file URL:", url);
+    return url;
   };
 
   const handleImageUploadImg = async (file) => {

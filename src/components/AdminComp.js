@@ -401,6 +401,7 @@ const CaseStudyForm = ({
 
 function PeopleCard({ people, updatePople, deletePeople }) {
   const [showForm, setShowForm] = useState(false);
+  const [peopleId, setPropleId] = useState("");
   const [selectedCase, setSelectedCase] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -410,6 +411,7 @@ function PeopleCard({ people, updatePople, deletePeople }) {
 
   const handleShow = (item) => {
     setSelectedCase(item);
+    setPropleId(item._id);
     setFormData({
       name: item.name,
       designation: item.designation,
@@ -439,6 +441,7 @@ function PeopleCard({ people, updatePople, deletePeople }) {
   };
 
   const handleSubmit = async (e, _id) => {
+    console.log("Submitting update for ID:", _id);
     e.preventDefault();
     await updatePople(
       _id,
@@ -517,7 +520,7 @@ function PeopleCard({ people, updatePople, deletePeople }) {
                         }}
                       >
                         <h2 className="text-center mb-4">Add People</h2>
-                        <Form onSubmit={(e) => handleSubmit(e, person._id)}>
+                        <Form onSubmit={(e) => handleSubmit(e, peopleId)}>
                           <FormGroup>
                             <Label>Name</Label>
                             <Input
@@ -595,11 +598,13 @@ function PeopleCard({ people, updatePople, deletePeople }) {
 
 function CasesCard({ cases, deleteCase, updateCase }) {
   const [showForm, setShowForm] = useState(false);
+  const [caseId, setCaseId] = useState("");
   const [selectedCase, setSelectedCase] = useState(null);
   const [formData, setFormData] = useState({ name: "", description: "" });
 
   const handleShow = (item) => {
     setSelectedCase(item);
+    setCaseId(item._id);
     setFormData({ name: item.name, description: item.description });
     setShowForm(true);
   };
@@ -693,7 +698,7 @@ function CasesCard({ cases, deleteCase, updateCase }) {
                         }}
                       >
                         <h2 className="text-center mb-4">Add Categories</h2>
-                        <Form onSubmit={(e) => handleSubmit(e, item._id)}>
+                        <Form onSubmit={(e) => handleSubmit(e, caseId)}>
                           <FormGroup>
                             <Label>Name</Label>
                             <Input

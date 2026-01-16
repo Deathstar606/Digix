@@ -1,6 +1,6 @@
 /*Starts Here*/
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
@@ -101,7 +101,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.modal-admin {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 9999;
 }
 
@@ -122,10 +133,10 @@ body {
 .butt:hover {
   color: whitesmoke;
   background-color: #000000;
-  border-color: #F1593A;
+  border-color: #f1593a;
 }
 
-.butt::before{
+.butt::before {
   content: "";
   position: absolute;
   left: 0;
@@ -136,11 +147,11 @@ body {
 }
 
 .jumbotron {
-  height: 100vh; 
-  padding:120px 0px 100px 0px;
+  height: 100vh;
+  padding: 120px 0px 100px 0px;
   background-color: #353839;
-  margin:0px auto;
-  color: #F1593A;
+  margin: 0px auto;
+  color: #f1593a;
 }
 
 .section-hero-data {
@@ -150,9 +161,9 @@ body {
 }
 
 .headerdec {
-  text-decoration:underline;
+  text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-color: #F1593A;
+  text-decoration-color: #f1593a;
 }
 
 .animeY {

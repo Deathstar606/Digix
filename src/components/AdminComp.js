@@ -496,7 +496,7 @@ function PeopleCard({ people, updatePople, deletePeople }) {
           <AnimatePresence>
             {showForm && selectedCase && (
               <motion.div
-                className="modal-back"
+                className="modal-admin"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -674,7 +674,7 @@ function CasesCard({ cases, deleteCase, updateCase }) {
           <AnimatePresence>
             {showForm && selectedCase && (
               <motion.div
-                className="modal-back"
+                className="modal-admin"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Digix/static/css/main.06c1534d.css",
-    "main.js": "/Digix/static/js/main.28b6a837.js",
+    "main.js": "/Digix/static/js/main.a9db0d4d.js",
     "static/js/787.7815d080.chunk.js": "/Digix/static/js/787.7815d080.chunk.js",
     "static/media/demo.mp4": "/Digix/static/media/demo.a5136bb9b306c8fd2b44.mp4",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Digix/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -14,11 +14,11 @@
     "static/media/Digixwhitelogo.png": "/Digix/static/media/Digixwhitelogo.90a0a511e3b9d5eb9047.png",
     "index.html": "/Digix/index.html",
     "main.06c1534d.css.map": "/Digix/static/css/main.06c1534d.css.map",
-    "main.28b6a837.js.map": "/Digix/static/js/main.28b6a837.js.map",
+    "main.a9db0d4d.js.map": "/Digix/static/js/main.a9db0d4d.js.map",
     "787.7815d080.chunk.js.map": "/Digix/static/js/787.7815d080.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06c1534d.css",
-    "static/js/main.28b6a837.js"
+    "static/js/main.a9db0d4d.js"
   ]
 }

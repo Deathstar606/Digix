@@ -107,7 +107,7 @@ function Leaders(people) {
                     }}
                     modules={[Scrollbar]}
                     spaceBetween={20}
-                    slidesPerView={4}
+                    slidesPerView={5}
                     className="mySwiper"
                   >
                     {people.leaders.map((leader, index) => (
@@ -122,13 +122,9 @@ function Leaders(people) {
                     scrollbar={{
                       hide: false,
                     }}
-                    autoplay={{
-                      delay: 3000, // Adjust delay time (in milliseconds) as needed
-                      disableOnInteraction: false, // Optional: keeps autoplay running after interactions like swiping
-                    }}
-                    modules={[Scrollbar, Autoplay]}
+                    modules={[Scrollbar]}
                     spaceBetween={20}
-                    slidesPerView={1}
+                    slidesPerView={1.5}
                     className="mySwiper"
                   >
                     {people.leaders.map((leader, index) => (
